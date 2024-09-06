@@ -1,13 +1,20 @@
 // an example to create a new mapping `ctrl-y`
-api.mapkey('<ctrl-y>', 'Show me the money', function() {
-    Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
-});
+/* Todo
+- Shift + H: Go back (Currently Shift + B and Shift + F, switch to H and L?)
+- o: Open URL (Similar to how Vimium does it, `go` seems to accomplish this but unless it is a proper url, it will just resolve to a google search)
+- r: Open subreddit (Similar to how Vimium does search, "https://old.reddit.com/r/%s"
+- Disable features that I do not need
+- Change interactive input box theme to tokyonight
+*/
 
-// an example to replace `T` with `gt`, click `Default mappings` to see how `T` works.
-api.map('gt', 'T');
+//https://blog.yech.xyz/posts/surfingkeys_vimium_like_setting/
+// api.mapkey("ou", "Open a URL", 'Normal.openOmnibar({type: "URLs"})');
 
-// an example to remove mapkey `Ctrl-i`
-api.unmap('<ctrl-i>');
+// unmap for reddit
+//api.unmap(['j','k','z'], '/old.reddit.com/');
 
-// set theme
+// follow links hotkeys
+api.Hints.setCharacters('qweasdzxc');
+
+// set theme - tokyonight
 settings.theme = ``;
