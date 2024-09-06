@@ -1,48 +1,78 @@
 // an example to create a new mapping `ctrl-y`
-api.mapkey('<ctrl-y>', 'Show me the money', function() {
-    Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
-});
+/* Todo
+- Shift + H: Go back (Currently Shift + B and Shift + F, switch to H and L?)
+- o: Open URL (Similar to how Vimium does it, `go` seems to accomplish this but unless it is a proper url, it will just resolve to a google search)
+- r: Open subreddit (Similar to how Vimium does search, "https://old.reddit.com/r/%s"
+- Disable features that I do not need
+- Change interactive input box theme to tokyonight
+*/
 
-// an example to replace `T` with `gt`, click `Default mappings` to see how `T` works.
-api.map('gt', 'T');
+//https://blog.yech.xyz/posts/surfingkeys_vimium_like_setting/
+// api.mapkey("ou", "Open a URL", 'Normal.openOmnibar({type: "URLs"})');
 
-// an example to remove mapkey `Ctrl-i`
-api.unmap('<ctrl-i>');
+// unmap for reddit
+//api.unmap(['j','k','z'], '/old.reddit.com/');
 
-// set theme
+// follow links hotkeys
+api.Hints.setCharacters('qweasdzxc');
+
+// set theme - tokyonight
 settings.theme = `.sk_theme {
     font-family: Input Sans Condensed, Charcoal, sans-serif;
     font-size: 10pt;
-    background: #24272e;
-    color: #abb2bf;
+    
+    --fg: #c0caf5;
+    --bg: #1a1b26;
+    --bg2: #15161e;
+    --sel-bg: #33467c;
+    --cyan: #7dcfff;
+    --green: #9ece6a;
+    --magenta: #bb9af7;
+    --red: #f7768e;
+    --yellow: #e0af68;
+    --white: #a9b1d6;
+    
+    background: var(--bg);
+    color: var(--fg);
 }
 .sk_theme tbody {
-    color: #1f2335;
+    color: var(--bg);
 }
 .sk_theme input {
-    color: #d0d0d0;
+    color: var(--fg);
 }
 .sk_theme .url {
-    color: #61afef;
+    color: var(--magenta);
 }
 .sk_theme .annotation {
-    color: #56b6c2;
+    color: var(--cyan);
 }
 .sk_theme .omnibar_highlight {
-    color: #528bff;
+    color: var(--cyan);
 }
 .sk_theme .omnibar_timestamp {
-    color: #e5c07b;
+    color: var(--fg);
 }
 .sk_theme .omnibar_visitcount {
-    color: #98c379;
+    color: var(--fg);
 }
 .sk_theme #sk_omnibarSearchResult ul li:nth-child(odd) {
-    background: #303030;
+    background: var(--bg2);
 }
 .sk_theme #sk_omnibarSearchResult ul li.focused {
-    background: #3e4452;
+    background: var(--sel-bg);
 }
+.sk_theme .omnibar_folder {
+    color: var(--green);
+}
+.sk_theme .separator {
+    color: var(--green);
+}
+
+.sk_theme .prompt {
+    color: var(--white);
+}
+
 #sk_status, #sk_find {
     font-size: 20pt;
 }`;
