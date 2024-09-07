@@ -1,4 +1,3 @@
-// an example to create a new mapping `ctrl-y`
 /* Todo
 - Shift + H: Go back (Currently Shift + B and Shift + F, switch to H and L?)
 - o: Open URL (Similar to how Vimium does it, `go` seems to accomplish this but unless it is a proper url, it will just resolve to a google search)
@@ -40,9 +39,6 @@ api.unmap("oh");
 
 // follow links hotkeys
 api.Hints.setCharacters("qweasdzxc");
-
-// follow links hotkeys
-api.Hints.setCharacters('qweasdzxc');
 
 // set theme - tokyonight
 settings.theme = `.sk_theme {
