@@ -44,8 +44,8 @@ api.unmap("oh");
 api.unmap("r");
 
 // History
-api.unmap("H","S");
-api.unmap("L","D");
+api.map("H","S");
+api.map("L","D");
 
 // follow links hotkeys
 api.Hints.setCharacters("qweasdzxc");
