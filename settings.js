@@ -11,9 +11,9 @@
 // api.mapkey("ou", "Open a URL", 'Normal.openOmnibar({type: "URLs"})');
 
 // unmap for reddit
-api.unmap('j', '/old.reddit.com/');
-api.unmap('k', '/old.reddit.com/');
-api.unmap('z', '/old.reddit.com/');
+api.unmap('j', /old.reddit.com/);
+api.unmap('k', /old.reddit.com/);
+api.unmap('z', /old.reddit.com/);
 
 // unmap and remap search engines
 api.unmap('sg');
