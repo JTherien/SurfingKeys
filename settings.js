@@ -50,5 +50,6 @@ api.map("L","D");
 // follow links hotkeys
 api.Hints.setCharacters("qweasdzxc");
 
+
 // set theme - tokyonight
 settings.theme = ``;

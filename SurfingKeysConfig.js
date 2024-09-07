@@ -50,6 +50,7 @@ api.map("L","D");
 // follow links hotkeys
 api.Hints.setCharacters("qweasdzxc");
 
+
 // set theme - tokyonight
 settings.theme = `.sk_theme {
     font-family: Input Sans Condensed, Charcoal, sans-serif;
