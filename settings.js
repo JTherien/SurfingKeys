@@ -13,6 +13,7 @@
 api.unmap("j", /old.reddit.com/);
 api.unmap("k", /old.reddit.com/);
 api.unmap("z", /old.reddit.com/);
+api.unmap("C", /old.reddit.com/);
 
 // unmap close window
 api.unmap("x");
@@ -43,13 +44,8 @@ api.unmap("oh");
 api.unmap("r");
 
 // History
-api.unmap("S");
-api.unmap("D");
-api.unmap("H");
-api.unmap("L");
-
-api.mapkey("H", "Go back in history", "history.go(-1)");
-api.mapkey("L", "Go forward in history", "history.go(1)");
+api.unmap("H","S");
+api.unmap("L","D");
 
 // follow links hotkeys
 api.Hints.setCharacters("qweasdzxc");
