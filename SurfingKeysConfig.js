@@ -37,6 +37,17 @@ api.unmap("oy");
 api.unmap("ox");
 api.unmap("oh");
 
+api.unmap("r");
+
+// History
+api.unmap("S");
+api.unmap("D");
+api.unmap("H");
+api.unmap("L");
+
+api.mapkey("H", "Go back in history", "history.go(-1)");
+api.mapkey("L", "Go forward in history", "history.go(1)");
+
 // follow links hotkeys
 api.Hints.setCharacters("qweasdzxc");
 
