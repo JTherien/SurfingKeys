@@ -1,5 +1,4 @@
 /* Todo
-- Shift + H: Go back (Currently Shift + B and Shift + F, switch to H and L?)
 - o: Open URL (Similar to how Vimium does it, `go` seems to accomplish this but unless it is a proper url, it will just resolve to a google search)
 - r: Open subreddit (Similar to how Vimium does search, "https://old.reddit.com/r/%s"
 - Disable features that I do not need
@@ -27,7 +26,8 @@ api.unmap("ss");
 api.unmap("sh");
 api.unmap("sy");
 
-// api.addSearchAlias("b", "brave", "https://www.brave.com/search?q=");
+api.removeSearchAlias("b");
+api.addSearchAlias("b", "brave", "https://www.brave.com/search?q=");
 // api.addSearchAlias("r", "subreddit", "https://old.reddit.com/r/");
 
 api.unmap("om");
@@ -49,6 +49,8 @@ api.map("L","D");
 
 // follow links hotkeys
 api.Hints.setCharacters("qweasdzxc");
+
+settings.defaultSearchEngine("b");
 
 // set theme - tokyonight
 settings.theme = ``;
