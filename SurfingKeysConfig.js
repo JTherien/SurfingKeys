@@ -14,6 +14,9 @@ api.unmap("k", /old.reddit.com/);
 api.unmap("z", /old.reddit.com/);
 api.unmap("C", /old.reddit.com/);
 
+// disable for roll20
+api.unmapAllExcept([], /app.roll20.net/);
+
 // unmap close window
 api.unmap("x");
 
