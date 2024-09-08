@@ -13,6 +13,8 @@ api.unmap("j", /old.reddit.com/);
 api.unmap("k", /old.reddit.com/);
 api.unmap("z", /old.reddit.com/);
 api.unmap("C", /old.reddit.com/);
+api.unmap("ab", /old.reddit.com/);
+api.unmap("af", /old.reddit.com/);
 
 // unmap close window
 api.unmap("x");
