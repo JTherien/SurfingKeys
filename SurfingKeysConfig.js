@@ -110,6 +110,12 @@ settings.theme = `.sk_theme {
     color: var(--white);
 }
 
+.sk_tab {
+    background: var(--bg);
+    color: var(--fg);
+}
+
 #sk_status, #sk_find {
     font-size: 20pt;
-}`;
+}
+`;
