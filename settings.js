@@ -44,6 +44,9 @@ api.unmap("oh");
 
 api.unmap("r");
 
+// Edit URL and reload
+api.map("F6",";U");
+
 // History
 api.map("H","S");
 api.map("L","D");

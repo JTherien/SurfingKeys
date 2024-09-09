@@ -54,8 +54,7 @@
     color: var(--white);
 }
 
-.sk_tab {
-    font-family: Input Sans Condensed, Charcoal, sans-serif;
+.ace_editor {
     font-size: 10pt;
     
     --fg; #c0caf5;
