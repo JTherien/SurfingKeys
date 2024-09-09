@@ -112,7 +112,7 @@ settings.theme = `.sk_theme {
     color: var(--white);
 }
 
-.ace_editor {
+#sk_editor  {
     font-size: 10pt;
     
     --fg: #c0caf5;
