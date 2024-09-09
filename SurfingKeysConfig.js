@@ -29,8 +29,8 @@ api.unmap("sh");
 api.unmap("sy");
 
 api.removeSearchAlias("b");
-api.addSearchAlias("b", "brave", "https://www.search.brave.com/search?q=");
-// api.addSearchAlias("r", "subreddit", "https://old.reddit.com/r/");
+api.addSearchAlias("b", "brave", "https://search.brave.com/search?q=");
+api.addSearchAlias("r", "subreddit", "https://old.reddit.com/r/");
 
 api.unmap("om");
 api.unmap("og");
