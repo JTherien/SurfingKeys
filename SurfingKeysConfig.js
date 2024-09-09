@@ -35,7 +35,6 @@ api.addSearchAlias("r", "subreddit", "https://old.reddit.com/r/");
 api.unmap("om");
 api.unmap("og");
 api.unmap("od");
-api.unmap("ob");
 api.unmap("oe");
 api.unmap("ow");
 api.unmap("os");
