@@ -111,6 +111,12 @@ settings.theme = `.sk_theme {
 }
 
 .sk_tab {
+    font-family: Input Sans Condensed, Charcoal, sans-serif;
+    font-size: 10pt;
+    
+    --fg; #c0caf5;
+    --bg: #1a1b26;
+
     background: var(--bg);
     color: var(--fg);
 }
