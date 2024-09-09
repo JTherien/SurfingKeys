@@ -54,16 +54,6 @@
     color: var(--white);
 }
 
-#sk_editor  {
-    font-size: 10pt;
-    
-    --fg: #c0caf5;
-    --bg: #1a1b26;
-
-    background-color: var(--bg);
-    color: var(--fg);
-}
-
 #sk_status, #sk_find {
     font-size: 20pt;
 }

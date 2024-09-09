@@ -45,7 +45,7 @@ api.unmap("oh");
 api.unmap("r");
 
 // Edit URL and reload
-api.map("F6",";U");
+api.map("<F6>",";U");
 
 // History
 api.map("H","S");
@@ -53,7 +53,6 @@ api.map("L","D");
 
 // follow links hotkeys
 api.Hints.setCharacters("qweasdzxc");
-
 
 // set theme - tokyonight
 settings.theme = ``;

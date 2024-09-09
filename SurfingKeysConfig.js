@@ -45,7 +45,7 @@ api.unmap("oh");
 api.unmap("r");
 
 // Edit URL and reload
-api.map("F6",";U");
+api.map("<F6>",";U");
 
 // History
 api.map("H","S");
@@ -53,7 +53,6 @@ api.map("L","D");
 
 // follow links hotkeys
 api.Hints.setCharacters("qweasdzxc");
-
 
 // set theme - tokyonight
 settings.theme = `.sk_theme {
@@ -110,16 +109,6 @@ settings.theme = `.sk_theme {
 
 .sk_theme .prompt {
     color: var(--white);
-}
-
-#sk_editor  {
-    font-size: 10pt;
-    
-    --fg: #c0caf5;
-    --bg: #1a1b26;
-
-    background-color: var(--bg);
-    color: var(--fg);
 }
 
 #sk_status, #sk_find {
