@@ -53,7 +53,6 @@ api.map("L","D");
 
 // follow links hotkeys
 api.Hints.setCharacters("qweasdzxc");
-api.Hints.theme('ace/theme/solarized_dark');
 
 // set theme - tokyonight
 settings.theme = ``;
