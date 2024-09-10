@@ -18,6 +18,7 @@ api.unmap("af", /old.reddit.com/);
 
 // unmap close window
 api.unmap("x");
+api.unmap("<ctrl>-j");
 
 // unmap and remap search engines
 api.unmap("sg");
